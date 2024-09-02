@@ -1,0 +1,325 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+
+
+
+/* styles.css */
+@font-face {
+    font-family: 'Canva Sans';
+    src: url('/path/to/canva-sans.woff2') format('woff2'),
+         url('/path/to/canva-sans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Canva Sans';
+    src: url('/path/to/canva-sans-bold.woff2') format('woff2'),
+         url('/path/to/canva-sans-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+h1 {
+    font-family: 'Canva Sans', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Canva Sans', sans-serif;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Canva Sans', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to right, #d7f2ba, #91c0ff);
+}
+
+.content-wrap {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: transparent;
+}
+
+.image-section img {
+    max-width: 50%;
+    height: auto;
+    padding: 5px;
+
+}
+
+.login-form-section {
+    flex: 1;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    background-color: white;
+}
+
+.login-form-section h1 {
+    margin-bottom: 10px;
+}
+
+.login-form-section p {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: linear-gradient(to right, #d7f2ba, #91c0ff);
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+
+}
+.header{
+    background: linear-gradient(to right, #ffffff, #91c0ff);
+}
+.homepage{
+    background: linear-gradient(to right, #ffffff, #91c0ff);
+}
+.sidebar {
+    width: 250px;
+    background-color: #f8f9fa;
+    color:black;
+    height: auto;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+
+}
+
+.sidebar .nav-item {
+    margin-bottom: 0.5rem;
+}
+
+.sidebar .nav-link {
+    color: #000000; /* Bootstrap light color */
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #495057; /* Bootstrap secondary color */
+    color: #fff;
+}
+.sidebar .nav-link.active {
+    background-color: #495057; /* Bootstrap secondary color */
+    color: #fff;
+}
+.container {
+    max-height: auto;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.table-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #3c4043;
+}
+
+.google-form-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 20px;
+}
+
+.google-form-table th,
+.google-form-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 14px;
+    color: #3c4043;
+}
+
+.google-form-table th {
+    background-color: #f1f3f4;
+    font-weight: 500;
+    color: #202124;
+}
+
+.google-form-table tr:hover {
+    background-color: #f1f3f4;
+}
+
+.google-form-table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.google-form-table tr:last-child td {
+    border-bottom: none;
+}
+.add-row-button {
+    background-color: #4190f8;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+
+}
+.add-row-button:hover {
+    background-color: #135ab7;
+}
+.button-container {
+    text-align: right;
+}
+
+/* breadcrumb sttle*/
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+    padding: 10px;
+}
+
+
+
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    padding: 0 0.5rem;
+    color: #6c757d; /* Separator color */
+}
+
+.breadcrumb-item a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    color: #6c757d; /* Active item color */
+}
+
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.btn-warning {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-warning:hover {
+    color: #212529;
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
